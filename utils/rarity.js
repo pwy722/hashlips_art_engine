@@ -20,7 +20,7 @@ layerConfigurations.forEach((config) => {
   layers.forEach((layer) => {
     // get elements for each layer
     let elementsForLayer = [];
-    let elements = getElements(`${layersDir}/${layer.name}/`);
+    let elements = getElements(`${layersDir}/${layer.dir}/${layer.name}/`);
     elements.forEach((element) => {
       // just get name and weight for each element
       let rarityDataElement = {
